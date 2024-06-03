@@ -174,5 +174,5 @@
            AND USER_PSWD     = #{userPswd}
            AND USE_YN       = 'Y' 
            AND ROWNUM       = 1
-    </select>    
+    </select>
 </mapper>
