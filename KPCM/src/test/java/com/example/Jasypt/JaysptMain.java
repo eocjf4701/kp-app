@@ -6,6 +6,7 @@ import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
 import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
 
 
+
 public class JaysptMain {
 
     public static void main(String[] args) {
