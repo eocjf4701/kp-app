@@ -143,7 +143,7 @@
              , A.PRGRM_PATH
              , A.URL_ADDR
              , A.USE_YN
-          FROM CM_MENU_B A
+          FROM CM_MENU_BSC_B A
          WHERE A.USE_YN='Y'
            AND (A.UP_MENU_ID = #{upMenuId} OR
                 A.UP_MENU_ID IN (SELECT B.MENU_ID FROM CM_MENU_BSC_B B WHERE B.UP_MENU_ID = #{upMenuId}) 
@@ -169,10 +169,10 @@
         /*Cm0101Dao.selectUser [사용자 조회]*/
         SELECT MBR_ID
              , MBR_NM
-          FROM MB_MBR_B
+          FROM MB_MBR_BSC_B
          WHERE MBR_EML_ADDR = #{mbrEmlAddr}
-           AND USER_PSWD     = #{userPswd}
+           AND PASS_NO      = #{passNo}
            AND USE_YN       = 'Y' 
-           AND ROWNUM       = 1
-    </select>
+           AND ROWNUM = 1
+    </select>    
 </mapper>

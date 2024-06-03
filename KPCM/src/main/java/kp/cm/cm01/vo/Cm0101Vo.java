@@ -48,6 +48,6 @@ public class Cm0101Vo {
     private String mdfcnDt            ;//수정일시
     private String mdfrIpAddr         ;//수정자IP주소
     private String bzmnSeCd           ;//사업자구분코드
-    private String userPswd           ;//비밀번호
+    private String passNo             ;//비밀번호
 
 }

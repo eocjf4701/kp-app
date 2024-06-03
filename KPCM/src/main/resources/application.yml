@@ -27,7 +27,7 @@ jasypt:
 server:
   servlet:
     context-path: /
-  port: '8090'
+  port: '8080'
 
 knwp:
   upload-path: "C:\\temp\\"
